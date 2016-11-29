@@ -3,8 +3,10 @@ PHP 5.2及以上版本
 
 # 二、介绍
 
-SDK适用于在PHP语言中调用service.youziku.com中的所有api
-
+SDK适用于在PHP语言中调用service.youziku.com中的所有api<br />
+SDK的返回值主要内容是@font-face语句（@font-face语句是所有浏览器天然支持的语句，它的作用是将一个远程字体文件加载到当前页面，并且定义成一个字体，当前页面能够像使用本地字体一样使用该字体。@font-face语句是实现在线字体效果的核心）。<br />
+用户可以将@font-face与内容相对应保存至数据库，以便在内容被加载时，能随内容一起加载到前端页面；<br />
+用户也可以不保存@font-face：有字库允许用户自定义字体存放路径，当需要引用字体效果时，可以根据自定义的路径拼出@font-face语句。
 # 三、引用
 1.requir_once 'lib/YouzikuServiceClient.php';
 
