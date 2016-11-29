@@ -33,6 +33,7 @@ $youzikuClient=new YouzikuServiceClient("xxxxxx");//xxxxxx为用户的apikey
 #### 备注:直接返回所有格式的@fontface
 
 ``` PHP
+//accessKey是字体的accesskey;content是要生成效果的文字内容;tag是css选择器代码
 $param=array("accessKey"=>"xxx","content"=>"有字库，让中文跃上云端！","tag"=>"#id1,.class1");
 $response=$youzikuClient->GetFontFace($param);
 ```
