@@ -15,7 +15,7 @@ SDK的返回值主要内容是@font-face语句，@font-face语句是CSS3中的�
 
 ## 4. 显示字体效果
 用户可以将@font-face语句与内容相对应保存至数据库，以便在内容被加载时，该语句能跟随内容一起加载到前端页面，从而使内容显示字体效果；<br/>
-用户也可以不保存@font-face语句：有字库允许用户自定义字体存放路径，当需要显示字体效果时，可以根据自己所定义的路径拼出@font-face语句，然后将语句输出到前端页面，即可使内容显示字体效果。
+用户也可以不保存@font-face语句：有字库允许用户<a href="#user-content-4自定义路径生成模式">自定义字体存放路径</a>，当需要显示字体效果时，可以根据自己所定义的路径<a href="http://service.youziku.com/index.html#format" target="_blank" style="color: #ff7e00;">拼组出@font-face语句</a>，然后将语句输出到前端页面，即可使内容显示字体效果。
 
 # 二、环境
 PHP 5.2及以上版本
@@ -69,7 +69,7 @@ $response = $youzikuClient->GetBatchWoffFontFace($params);
 ## 4.自定义路径生成模式
 ### 1.CreateBatchWoffWebFontAsync()
 #### 备注：自定义路径接口可以被程序异步调用，程序调用后可以直接向下执行，不需要等待返回值
-
+#### &emsp;&emsp;当需要显示字体效果时，可以根据自己所定义的路径<a href="http://service.youziku.com/index.html#format" target="_blank" style="color: #ff7e00;">拼组出@font-face语句</a>，然后将语句输出到前端页面，即可使内容显示字体效果。
 ``` PHP
 $cusParams[0]=array("accessKey"=>"xxx","content"=>"有字库，让中文跃上云端！","url" => "youziku/test-1");
 $cusParams[1]=array("accessKey"=>"xxx","content"=>"有字库，让前端掌控字体！","url" => "youziku/test-2";
