@@ -17,7 +17,7 @@
         static function GetFontFace($param,$apiKey){
            
            ParamValidate::GetFontFace($param);
-           
+           $param["content"]=str_replace("&","",$param["content"]);
            $paramDic = array("ApiKey"=>$apiKey,"AccessKey"=>$param["accessKey"],"Content"=>$param["content"],"Tag"=>$param["tag"]);
            $postData=self::ToUrlParams($paramDic);
            return $postData;
@@ -37,12 +37,12 @@
             
             $str="ApiKey=".$apiKey."&";
          
-               echo count($param);
             for ($i = 0; $i <count($param); $i++)
             {
-          
+                
               $str.="Tags[".$i."][AccessKey]=".$param[$i]["accessKey"]."&";
               $str.="Tags[".$i."][Tag]=".$param[$i]["tag"]."&";
+              $param[$i]["content"]=str_replace("&","",$param[$i]["content"]);
               $str.="Tags[".$i."][Content]=".$param[$i]["content"]."&";
               
             }
@@ -69,6 +69,8 @@
              
              $paramDic["Datas[".$i."][AccessKey]"]=$param[$i]["accessKey"];
              $paramDic["Datas[".$i."][Url]"]=$param[$i]["url"];
+
+             $param[$i]["content"]=str_replace("&","",$param[$i]["content"]);
              $paramDic["Datas[".$i."][Content]"]=$param[$i]["content"];
             }
             
