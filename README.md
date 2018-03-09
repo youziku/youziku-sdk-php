@@ -16,7 +16,7 @@ SDK的返回值主要内容是@font-face语句，@font-face语句是CSS3中的�
 
 # 二、环境
 1.PHP 5.2及以上版本<br />
-2.<a href="https://github.com/youziku/youziku-sdk-php/raw/master/sdk/sdk.libs.zip">下载SDK</a><br />
+2.<a href="https://github.com/youziku/youziku-sdk-php/raw/master/sdk/youziku.php.sdk.zip">下载SDK</a><br />
 # 三、引用
 1.requir_once 'lib/YouzikuServiceClient.php';
 
