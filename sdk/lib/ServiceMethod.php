@@ -16,8 +16,8 @@
         //接口方法CreateBatchWoffWebFontAsync()
         const  CreateBatchWoffWebFont = "/batchCustomWebFont/createBatchWoffWebFontAsync";
 
-          //接口方法CreateBatchWoffWebFontAsync()
-         const  CreateBatchWebFont = "/batchCustomWebFont/createBatchWebFontAsync";
+          //接口方法CreateBatchWebFontAsync()
+        const  CreateBatchWebFont = "/batchCustomWebFont/createBatchWebFontAsync";
         
     }
 

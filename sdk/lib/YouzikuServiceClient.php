@@ -70,7 +70,7 @@
           return $this->CommonGetFontFace($postData,$url);
         }
 
-         //请求 自定义路径接口；该接口底层实现为异步 (Woff版本)
+         //请求 自定义路径接口；该接口底层实现为异步 (全格式)
          function GetCustomPathBatchWebFont($param)
         {
           $postData = ParamBuilder::GetCustomPathBatchWoffWebFont($param, $this->apiKey);
