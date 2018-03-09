@@ -18,7 +18,7 @@
            
            ParamValidate::GetFontFace($param);
            $param["content"]=str_replace("&","",$param["content"]);
-           $paramDic = array("ApiKey"=>$apiKey,"AccessKey"=>$param["accessKey"],"Content"=>$param["content"],"Tag"=>$param["tag"]);
+           $paramDic = array("ApiKey"=>$apiKey,"AccessKey"=>$param["accessKey"],"Content"=>$param["content"],"Tag"=>$param["tag"],"UseRanFontFamily"=>$param["useRanFontFamily"]);
            $postData=self::ToUrlParams($paramDic);
            return $postData;
         	
@@ -44,7 +44,7 @@
               $str.="Tags[".$i."][Tag]=".$param[$i]["tag"]."&";
               $param[$i]["content"]=str_replace("&","",$param[$i]["content"]);
               $str.="Tags[".$i."][Content]=".$param[$i]["content"]."&";
-              
+              $str.="Tags[".$i."][UseRanFontFamily]=".$param[$i]["useRanFontFamily"]."&";
             }
              $str=trim($str,"&");
            
