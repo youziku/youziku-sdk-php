@@ -3,14 +3,14 @@
 
  require_once 'lib/YouzikuServiceClient.php';
     //初始化YouzikuClient
-    $youzikuClient=new YouzikuServiceClient("xxx");
+    $youzikuClient=new YouzikuServiceClient("xxx","https://service.youziku.com");
 
    // Single
-    // $param=array("accessKey"=>"xxx
-    // ","content"=>"有字库，让中文跃上云端！","tag"=>"#single-id1,.class1","useRanFontFamily"=>"false");
-    // $response=$youzikuClient->GetFontFace($param);
+    $param=array("accessKey"=>"xxx
+    ","content"=>"有字库，让中文跃上云端！","tag"=>"#single-id1,.class1","useRanFontFamily"=>"false");
+    $response=$youzikuClient->GetFontFace($param);
    
-    // echo var_dump($response);
+    echo var_dump($response);
  
 
     //Batch
